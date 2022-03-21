@@ -2,6 +2,7 @@ package com.noosh.selenium.testCase;
 
 import com.noosh.selenium.base.DriverBase;
 import com.noosh.selenium.business.createProjectPro;
+import com.noosh.selenium.business.createSpecPro;
 import com.noosh.selenium.business.loginPro;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.junit.After;
@@ -14,6 +15,7 @@ public class createProjectCase{
     public DriverBase driver;
     public createProjectPro cpp;
     public loginPro loginPro;
+    public createSpecPro csp;
     commonModel c = new commonModel();
 
     @BeforeClass
@@ -25,6 +27,7 @@ public class createProjectCase{
         loginPro = new loginPro(driver);
         cpp = new createProjectPro(driver);
         loginPro.login("dgo1g1mgr1", "noosh123");
+        csp = new createSpecPro(driver);
 
     }
 
@@ -32,6 +35,11 @@ public class createProjectCase{
     public void createProjectPage(){
 
         cpp.createProject("QA project "+c.randomInt(),2);
+    }
+
+    @Test
+    public void createSpec(){
+        csp.createSpec("spec01");
     }
 
     @AfterClass
