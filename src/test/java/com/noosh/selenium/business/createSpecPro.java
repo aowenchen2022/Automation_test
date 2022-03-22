@@ -14,6 +14,7 @@ public class createSpecPro {
         csh.clickSpecs();
         csh.clickCreateSpec();
         csh.selectSpecType();
+        csh.clickContinueButton();
         csh.enterSpecName(specName);
         csh.clickUpdateSpecButton();
     }

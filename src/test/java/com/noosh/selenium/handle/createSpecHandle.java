@@ -8,6 +8,7 @@ public class createSpecHandle {
     public createSpecPage csp;
     public createSpecHandle(DriverBase driver) {
         this.driver = driver;
+        csp = new createSpecPage(driver);
 
     }
 

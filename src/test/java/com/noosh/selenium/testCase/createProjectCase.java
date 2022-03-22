@@ -22,12 +22,13 @@ public class createProjectCase{
     public void BeforeClass() {
         this.driver = new DriverBase("chrome");
         driver.driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        c.sleep(20);
-        driver.get("https://nooshauth.qa2.noosh.com/login");
+        c.sleep(3);
+        driver.get("https://nooshauth.scdqa.noosh.com/login");
         loginPro = new loginPro(driver);
         cpp = new createProjectPro(driver);
-        loginPro.login("dgo1g1mgr1", "noosh123");
+        loginPro.login("dho1g1mgr1", "noosh123");
         csp = new createSpecPro(driver);
+        c.sleep(5);
 
     }
 
@@ -35,7 +36,9 @@ public class createProjectCase{
     public void createProjectPage(){
 
         cpp.createProject("QA project "+c.randomInt(),2);
+        c.sleep(5);
     }
+
 
     @Test
     public void createSpec(){
