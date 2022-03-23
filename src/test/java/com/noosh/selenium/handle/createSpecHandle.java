@@ -53,8 +53,8 @@ public class createSpecHandle {
         /**
          * 点击update spec button
          * */
-        public void clickUpdateSpecButton(){
-            csp.clickUpdateSpec();
+        public void clickUpdateSpecButton(int n){
+            csp.clickList(csp.clickUpdateSpec(),n);
         }
 
     }

@@ -4,6 +4,8 @@ import com.noosh.selenium.base.DriverBase;
 import com.noosh.selenium.util.getByLocator;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class createSpecPage extends BasePage {
     public createSpecPage(DriverBase driver) {
         super(driver);
@@ -47,8 +49,8 @@ public class createSpecPage extends BasePage {
     /**
      * 点击Update spec button
      * */
-    public WebElement clickUpdateSpec(){
-        return element(getByLocator.getLocator("updateSpec"));
+    public List<WebElement> clickUpdateSpec(){
+        return elements(getByLocator.getLocator("updateSpec"));
     }
 
 }

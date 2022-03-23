@@ -42,7 +42,7 @@ public class createProjectCase{
 
     @Test
     public void createSpec(){
-        csp.createSpec("spec01");
+        csp.createSpec("spec01"+c.randomInt(),1);
     }
 
     @AfterClass

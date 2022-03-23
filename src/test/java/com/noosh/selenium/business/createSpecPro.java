@@ -10,13 +10,13 @@ public class createSpecPro {
         this.driver = driver;
         csh = new createSpecHandle(driver);
     }
-    public void createSpec(String specName){
+    public void createSpec(String specName,int n){
         csh.clickSpecs();
         csh.clickCreateSpec();
         csh.selectSpecType();
         csh.clickContinueButton();
         csh.enterSpecName(specName);
-        csh.clickUpdateSpecButton();
+        csh.clickUpdateSpecButton(n);
     }
 
 }
