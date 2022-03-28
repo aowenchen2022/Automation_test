@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="wencyAutoTest" />
         <module name="nooshSelenium2022" />
+        <module name="Automation_test" />
+        <module name="wencyAutoTest" />
       </profile>
     </annotationProcessing>
   </component>

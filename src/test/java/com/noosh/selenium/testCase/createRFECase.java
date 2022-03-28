@@ -28,22 +28,24 @@ public class createRFECase {
         cpp = new createProjectPro(driver);
         loginPro.login("dho1g1mgr1", "noosh123");
         csp = new createSpecPro(driver);
+        crp = new createRfePro(driver);
         c.sleep(5);
     }
 
-    @Test
+    @Test(priority = 1)
     public void createProjectPage(){
         cpp.createProject("QA project "+c.randomInt(),2);
         c.sleep(5);
     }
 
 
-    @Test
+    @Test(priority = 2)
     public void createSpec(){
         csp.createSpec("spec01"+c.randomInt(),1);
+        c.sleep(5);
     }
 
-    @Test
+    @Test(priority = 3)
     public void createRfe(){
         crp.createRfe();
 
