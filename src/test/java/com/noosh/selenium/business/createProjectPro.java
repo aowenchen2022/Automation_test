@@ -14,6 +14,9 @@ public class createProjectPro {
     public void createProject(String projectName,int n){
         lph.clickCreateProject();
         lph.sendKeysProjectName(projectName);
+//        lph.clickContacts();
+//        lph.selectClient();
+//        lph.clickDone(n);
         lph.clickCreateProjectButton(n);
     }
 }

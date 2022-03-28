@@ -25,6 +25,27 @@ public class createProjectPage extends BasePage{
     public WebElement getProjectName(){
         return element(getByLocator.getLocator("projectName"));
     }
+
+//    /**
+//     * 点击Contacts
+//     * */
+//    public WebElement clickContacts(){
+//        return element(getByLocator.getLocator("Contacts"));
+//    }
+//    /**
+//     * 选择client
+//     * */
+//    public WebElement selectClient(){
+//        return element(getByLocator.getLocator("selectClient"));
+//    }
+//
+//    /**
+//     * 点击Done button
+//     * */
+//    public List <WebElement> clickDoneButton(){
+//        return elements(getByLocator.getLocator("doneButton"));
+//    }
+
     /**
      *点击create project button
      * */
