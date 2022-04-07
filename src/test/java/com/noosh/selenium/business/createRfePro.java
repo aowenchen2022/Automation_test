@@ -14,8 +14,8 @@ public class createRfePro {
     public void createRfe(){
         crh.clickEstimates();
         crh.clickCreateRfe();
-        crh.enterEstimateDueDate("3/30/2022");
-        crh.enterOrderCompletionDate("5/6/2022");
+        crh.enterEstimateDueDate("4/30/2022");
+        crh.enterOrderCompletionDate("7/6/2022");
         crh.enterQty1(100);
         crh.clickContacts();
         crh.selectSupplier();

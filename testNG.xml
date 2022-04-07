@@ -1,0 +1,12 @@
+<!-- 没有此行配置运行时会报错 -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- name中的值表示命名，可随意命名 -->
+<suite name="Test1">
+    <!-- name中的值表示命名，可随意命名 -->
+    <test name="com.noosh.selenium.testCase.createRFECase">
+        <!-- name中的值为需要测试的具体类名，格式：包名.类名 -->
+        <classes>
+            <class name="com.noosh.selenium.testCase.createRFECase"/>
+        </classes>
+    </test>
+</suite>
